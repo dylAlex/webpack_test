@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "webfont";
+  font-display: swap;
+  src: url("../webfont.woff2") format("woff2");
+}
+
+.web-font {
+  font-family: "webfont" !important;
+  font-size: 24px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul li {
+  width: 100px;
+  height: 100px;
+  //在html,css中使用别名 不要忘记~
+  background: url(~@assets/logo.png);
+}
+
+html {
+  body {
+    background: green;
+    div:nth-of-type(odd) {
+      background: skyblue;
+    }
+  }
+}
